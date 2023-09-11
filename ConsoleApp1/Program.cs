@@ -1,4 +1,6 @@
-﻿namespace HelloWorld
+﻿using ConsoleApp1;
+
+namespace HelloWorld
 {
     class Program
     {
@@ -15,6 +17,10 @@
             sum = mas.Sum();
             Console.WriteLine();
             Console.WriteLine("Суммма чисел:" + sum);
+            //Console.ReadLine();
+
+            CheckIsEvenNumber checkIsEvenNumber = new CheckIsEvenNumber();  
+            checkIsEvenNumber.IsEvenNumber();
         }
     }
 }
