@@ -11,11 +11,11 @@ namespace ConsoleApp1
 
         public string OutputCheckMessage(int num)
         {
-            bool isEven = CheckIsEven(num);
+            bool isEven = IsEven(num);
             return isEven ? $"Число - {num} четное  " : $"Число - {num} нечетное  ";
         }
 
-        public bool CheckIsEven(int num) {
+        public bool IsEven(int num) {
 
             return num % 2 == 0;
         }

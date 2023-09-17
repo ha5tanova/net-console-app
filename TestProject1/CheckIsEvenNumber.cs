@@ -13,16 +13,32 @@ namespace TestProject1
         [Fact]
         public void TestIsEvenNumber() {
             CheckIsEvenNumber checkIsEvenNumber = new CheckIsEvenNumber();
-            int checkNumber = 10;
-            //bool IsEven = checkIsEvenNumber.Equals(checkNumber);
-            bool IsEven = checkIsEvenNumber.CheckIsEven(checkNumber);
-
+            int num = 10;
+            bool IsEven = checkIsEvenNumber.IsEven(num);
             Assert.True(IsEven);
 
+            CheckIsEvenNumber checkIsEvenNumber1 = new CheckIsEvenNumber();
             int checkNumberWithFalied = 9;
-            //bool IsEvenWithFalied = checkIsEvenNumber.(checkNumberWithFalied);
+            bool IsEvenWithFalied = checkIsEvenNumber1.IsEven(checkNumberWithFalied);
+            Assert.True(IsEvenWithFalied);
 
-            //Assert.True(IsEvenWithFalied);
+            CheckIsEvenNumber checkIsEvenNumber2 = new CheckIsEvenNumber();
+            int numNegative = -100;
+            bool IsEven_Negative = checkIsEvenNumber2.IsEven(numNegative);
+            Assert.True(IsEven_Negative);
+
+            CheckIsEvenNumber checkIsEvenNumber3 = new CheckIsEvenNumber();
+            int numNegativeNotEven = -45;
+            bool IsNotEven_Negative = checkIsEvenNumber3.IsEven(numNegativeNotEven);
+            Assert.True(IsNotEven_Negative);
+
+        }
+
+
+        public bool IsEven(int num)
+        {
+
+            return num % 2 == 0;
         }
     }
 }
