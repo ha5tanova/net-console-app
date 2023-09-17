@@ -19,7 +19,7 @@ namespace HelloWorld
             Console.WriteLine("Суммма чисел:" + sum);
             //Console.ReadLine();
 
-            CheckIsEvenNumber checkIsEvenNumber = new CheckIsEvenNumber();  
+            CheckIsEvenNumber checkIsEvenNumber = new CheckIsEvenNumber();
             checkIsEvenNumber.IsEvenNumber();
         }
     }

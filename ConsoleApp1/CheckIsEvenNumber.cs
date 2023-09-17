@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class CheckIsEvenNumber
+    public class CheckIsEvenNumber
     {
 
         public string OutputCheckMessage(int num)
@@ -30,6 +30,7 @@ namespace ConsoleApp1
                 string result = OutputCheckMessage(userInputNumber);
                 Console.WriteLine(result);  
             }
+            
         }
     }
 }
