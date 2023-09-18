@@ -20,9 +20,9 @@ namespace TestProject1
 
             Assert.NotEmpty(num1);
 
-
+            //Тест на проверку пустая ли строка с помощью Assert.Empty
         }
 
-        
+
     }
 }
