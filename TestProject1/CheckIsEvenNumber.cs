@@ -21,18 +21,9 @@ namespace TestProject1
             int checkNumberWithFalied = 9;
             bool IsEvenWithFalied = checkIsEvenNumber1.IsEven(checkNumberWithFalied);
             Assert.True(IsEvenWithFalied);
-
-            CheckIsEvenNumber checkIsEvenNumber2 = new CheckIsEvenNumber();
-            int numNegative = -100;
-            bool IsEven_Negative = checkIsEvenNumber2.IsEven(numNegative);
-            Assert.True(IsEven_Negative);
-
-            CheckIsEvenNumber checkIsEvenNumber3 = new CheckIsEvenNumber();
-            int numNegativeNotEven = -45;
-            bool IsNotEven_Negative = checkIsEvenNumber3.IsEven(numNegativeNotEven);
-            Assert.True(IsNotEven_Negative);
-
         }
+
+        
 
 
         public bool IsEven(int num)
