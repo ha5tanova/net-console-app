@@ -11,7 +11,7 @@ namespace TestProject1
         [Fact]
         public void TestIsEvenNumber0()
         {
-
+            //check is null
             CheckIsEvenNumber checkIsEvenNumber0 = new CheckIsEvenNumber();
             int num = 0;
             bool IsEven_Null = checkIsEvenNumber0.IsEven(num);
